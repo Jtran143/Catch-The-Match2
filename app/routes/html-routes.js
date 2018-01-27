@@ -15,21 +15,21 @@ var router = express.Router();
   // In each of the below cases the user is shown an HTML page of content
   // ---------------------------------------------------------------------------
   router.get("/profile", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/profile_page.html"));  
+    res.sendFile(path.join(__dirname, "../public/profile_page/profile_page.html"));  
   });
 
   router.get("/landing", function(req, res) {
     console.log('req', req);
-    res.sendFile(path.join(__dirname, "../public/landing_page.html"));
+    res.sendFile(path.join(__dirname, "../public/landing-page/landing_page.html"));
   });
 
   router.use("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index_main.html"));  
+    res.sendFile(path.join(__dirname, "../public/index/index_main.html"));  
   });
 
   // If no matching route is found default to home
  router.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index_main.html"));
+    res.sendFile(path.join(__dirname, "../public/index/index_main.html"));
   });
 
   
