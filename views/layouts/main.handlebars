@@ -4,10 +4,57 @@
     <meta charset="utf-8">
     <title>Example App</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.min.js"></script>
+{{!-- PUT SRC FOR JS JQUERY, MATERILIZE, CSS ALL THE STUFF --}}
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <!-- Link to external js logic sheet -->
+  <script src="js/logic.js"></script>
+
+  <!-- link to external stylesheet and CSS-->
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <!-- external fonts for nav bar -->
+  <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One" rel="stylesheet">
+
+  <!-- external fonts for footer -->
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+
+  <!-- Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!--Social Media Icons for Footer-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
 {{{body}}}
 
-</body>
+
+
+  <script>
+    $(".dropdown-button").dropdown();
+
+    $(document).ready(function () {
+      $('select').material_select();
+            $('.modal').modal();
+    });
+
+  </script>
+
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="/js/signup.js"></script>
+  </body>
 </html>

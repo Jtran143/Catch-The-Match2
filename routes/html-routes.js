@@ -14,24 +14,24 @@ var router = express.Router();
   // Below code handles when users "visit" a page.
   // In each of the below cases the user is shown an HTML page of content
   // ---------------------------------------------------------------------------
+  router.get("/", function(req, res) {
+    res.render("index");  
+  });
+
   router.get("/profile", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/profile_page/profile_page.html"));  
+    res.render("profile");  
   });
 
   router.get("/landing", function(req, res) {
-    console.log('req', req);
-    res.sendFile(path.join(__dirname, "../public/landing-page/landing_page.html"));
+    res.render("landing");
   });
 
-  router.use("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index/index_main.html"));  
-  });
 
   // If no matching route is found default to home
  router.get("*", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index/index_main.html"));
+    res.render("index");
   });
 
-  
+  //CONVERT THESE INTO HANDLEBARS FILES 
 
 module.exports = router;
